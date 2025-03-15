@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peluquería Natalia Unisex</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 style="color: white;">Peluquería Natalia Unisex</h1>
+        <p>Estilo y belleza en Burgos</p>
+        <nav>
+            <button onclick="scrollToSection('about')">Sobre Nosotros</button>
+            <button onclick="scrollToSection('prices')">Precios</button>
+            <button onclick="scrollToSection('schedule')">Horario</button>
+            <button onclick="scrollToSection('location')">Ubicación</button>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>Sobre Nosotros</h2>
+        <img src="interior.jpg" alt="Interior de la Peluquería">
+        <p>En Peluquería Natalia Unisex, ofrecemos un servicio de calidad con un equipo de profesionales dedicados a resaltar tu belleza. Nos especializamos en cortes modernos, peinados elegantes y coloración personalizada.</p>
+    </section>
+
+    <section id="prices">
+        <h2>Precios</h2>
+        <div class="service">
+            <h3>Corte de Pelo</h3>
+            <p>Desde 15€</p>
+        </div>
+        <div class="service">
+            <h3>Barbería</h3>
+            <p>Desde 12€</p>
+        </div>
+        <div class="service">
+            <h3>Peinado</h3>
+            <p>Desde 20€</p>
+        </div>
+    </section>
+
+    <section id="schedule">
+        <h2>Horario</h2>
+        <table>
+            <tr><th>Día</th><th>Horario</th></tr>
+            <tr><td>Lunes</td><td>9:30 - 19:30</td></tr>
+            <tr><td>Martes</td><td>9:30 - 19:30</td></tr>
+            <tr><td>Miércoles</td><td>9:30 - 19:30</td></tr>
+            <tr><td>Jueves</td><td>9:30 - 19:30</td></tr>
+            <tr><td>Viernes</td><td>8:30 - 19:30</td></tr>
+            <tr><td>Sábado</td><td>8:30 - 13:30</td></tr>
+            <tr><td>Domingo</td><td>Cerrado</td></tr>
+        </table>
+    </section>
+
+    <section id="location">
+        <h2>Ubicación</h2>
+        <p>Calle de las Calzadas 30, 09004 Burgos, BU, España</p>
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2872.472719347416!2d-3.7041942240361125!3d42.34320433600215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd43ddfd10852aef%3A0x1f95b7bb4a71cd0e!2sC.%20de%20las%20Calzadas%2C%2030%2C%2009004%20Burgos%2C%20España!5e0!3m2!1ses!2ses!4v1710432927466!5m2!1ses!2ses" 
+            width="100%" 
+            height="300" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Peluquería Natalia Unisex. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        function scrollToSection(id) {
+            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
